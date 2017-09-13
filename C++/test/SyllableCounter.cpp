@@ -16,18 +16,14 @@ int main(){
 }
 
 int SyllableCounter(string str){
-	//cout << "SyllableCounter iterates..." << endl;
     int numSyll=0;
     for(int i = 0; i < str.size(); i++){
-    	//cout << "	Testing Char " << str[i] << endl;
         if(IsVowel(str[i]) && i != 0){
             if(!(IsVowel(str[i-1]))){
-            	//cout << "	SYLLABLE FOUND!" << endl;
                 numSyll++;
             }
         }	
         if(IsVowel(str[i]) && i == 0){
-        	//cout << "	SYLLABLE FOUND!" << endl;
 			numSyll++;
         }
     }
@@ -39,14 +35,11 @@ int SyllableCounter(string str){
 }
 bool IsVowel(char c){
 	tolower(c);
-	//cout << "IsVowel iterates..." << endl;
     char vowels [] = {'a','e','i','o','u','y'};
     for(int i = 0; i < 6; i++){
         if(c == vowels[i]){
-        	//cout << "	IsVowel returns true!" << endl;
             return true;
         }
     }
-    //cout << "	IsVowel Returns false!" << endl;
     return false;
 }

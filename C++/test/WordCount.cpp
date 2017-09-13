@@ -8,6 +8,8 @@ using namespace std;
 
 //vector<string>* LineParser(string str);
 bool IsDigit(char c);
+bool IsNumber(string str);
+bool IsEndOfSentence(string str);
 
 int main(int argc, char *argv[]){
 	string line;
@@ -21,15 +23,32 @@ int main(int argc, char *argv[]){
 			int j = 0;
 			for(int i = 0; i < line.size(); i++){
 				if(line[i] == ' '){
-					wordsInLine.push_back(line.substr(j, (i-j)));
+					string test = line.substr(j, (i-j));
+					cout << test[0] << endl;
+					cout << IsNumber(test) << endl;
+					if((!(test[0] == ' ')) && !(IsNumber(test))){
+						numWords++;
+					}
+					if(IsEndOfSentence(test)){
+						numSentences++;
+					}
+
+					//wordsInLine.push_back(line.substr(j, (i-j)));
 					j = i+1;
 				}
 			}
-			for(int i = 0; i < wordsInLine.size(); i++){
+			/*for(int i = 0; i < wordsInLine.size(); i++){
+				string test = wordsInLine[i];
+				if(test[0] == ' ')
+					wordsInLine.erase(wordsInLine.begin()+i);
+			}*/
+			/*for(int i = 0; i < wordsInLine.size(); i++){
 				cout << wordsInLine[i] << endl;
-			}
+			}*/
 			//cout << wordsInLine << endl;
 		}
+		cout << "Number of Words: " << numWords << endl;
+		cout << "Number of Sentences: " << numSentences << endl;
 		myInput.close();
 	}
 	else
@@ -53,4 +72,19 @@ bool IsDigit(char c){
 			return true;
 	}
 	return false;
+}
+bool IsNumber(string str){
+	for(int i = 0; i < str.size(); i++){
+		if(!IsDigit(str[i]))
+			return false;
+	}
+	return true;
+}
+bool IsEndOfSentence(string str){
+	char punctuation[] = {'.', ':',';','?','!'};
+		for(int i = 0; i < 6; i++){
+			if(str.back() == punctuation[i])
+				return true;
+		}
+		return false;
 }
