@@ -1,0 +1,100 @@
+V "GNAT Lib v6"
+M P W=b
+P SS ZX
+
+RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV SPARK_05
+
+U flesch%b		flesch.adb		f8d38a30 NE OO SU IL
+W ada%s			ada.ads			ada.ali
+W ada.command_line%s	a-comlin.adb		a-comlin.ali
+W ada.io_exceptions%s	a-ioexce.ads		a-ioexce.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+D ada.ads		20070406091342 3ffc8e18 ada%s
+D a-charac.ads		20070912115821 2d3ec45b ada.characters%s
+D a-chlat1.ads		20140225151544 66457d31 ada.characters.latin_1%s
+D a-comlin.ads		20140225151544 ea62afbc ada.command_line%s
+D a-except.ads		20151016123252 291912d5 ada.exceptions%s
+D a-finali.ads		20151020095656 bf4f806b ada.finalization%s
+D a-ioexce.ads		20140225151544 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20141120112812 119b8fb3 ada.streams%s
+D a-string.ads		20070406091342 90ac6797 ada.strings%s
+D a-strmap.ads		20140611123156 e8bb714a ada.strings.maps%s
+D a-strunb.ads		20140717072738 3f91d4c5 ada.strings.unbounded%s
+D a-tags.ads		20151016130316 01f5e3ef ada.tags%s
+D a-textio.ads		20140717063745 386df5d4 ada.text_io%s
+D a-unccon.ads		20070406091342 f9eb8f06 ada.unchecked_conversion%s
+D flesch.adb		20170923210839 f1ed1bf9 flesch%b
+D interfac.ads		20151118101227 4be8ce1b interfaces%s
+D i-cstrea.ads		20140801100435 e53d8b8e interfaces.c_streams%s
+D system.ads		20151123113124 6326c08a system%s
+D s-atocou.ads		20151020101020 b45c2d8d system.atomic_counters%s
+D s-crtl.ads		20141120112812 0ebbdb71 system.crtl%s
+D s-exctab.ads		20140225151139 54135002 system.exception_table%s
+D s-ficobl.ads		20140718105747 078245e4 system.file_control_block%s
+D s-finmas.ads		20151016130316 7811a767 system.finalization_masters%s
+D s-finroo.ads		20120426095924 4ff27390 system.finalization_root%s
+D s-parame.ads		20140801093848 7e2a0d7f system.parameters%s
+D s-secsta.ads		20140225151139 86a2856d system.secondary_stack%s
+D s-soflin.ads		20151020124036 14e1eb6c system.soft_links%s
+D s-stache.ads		20140225151139 a37c21ec system.stack_checking%s
+D s-stalib.ads		20151112104907 09bd3940 system.standard_library%s
+D s-stoele.ads		20140225151139 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20131010103753 b16154c2 system.storage_pools%s
+D s-stposu.ads		20151020120548 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20131014135145 aedef97e system.stream_attributes%s
+D s-traent.ads		20140730135025 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20140731130224 9d58a4c0 system.unsigned_types%s
+D s-wchcon.ads		20140718092328 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 19e8 15|1r6 2r6 3r6 4r6 5r5 6r5 7r5 8r5 12r34 17r44 21r9 21r50 24r19
+. 25r17 32r22 32r51 36r17 39r9
+X 4 a-comlin.ads
+38K13*Command_Line 139e21 15|3w10 7r9 17r48
+48V13*Argument{string} 15|17s61
+X 7 a-ioexce.ads
+18K13*IO_Exceptions 30e22 15|2w10 6r9 32r26
+26X4*End_Error 15|32r40
+X 9 a-string.ads
+16K13*Strings 35e16 15|4r10 8r9
+X 11 a-strunb.ads
+76K21*Unbounded 489e26 15|4w18 8r17
+X 13 a-textio.ads
+49K13*Text_IO 471e16 15|1w10 5r9 12r38 21r13 21r54 24r23 25r21 32r55 36r21
+. 39r13
+52P9*File_Type 15|12r46
+53n23*In_File{53E9} 15|21r62
+92U14*Open 15|21s21
+93p7 File{52P9} 15|21r26
+94e7 Mode{53E9} 15|21r43
+95a7 Name{string} 15|21r71
+98U14*Close 15|32s63
+98p22 File{52P9} 15|32r69
+166U14*New_Line 15|39s21
+183V13*End_Of_File{boolean} 15|24s31
+205U14*Get 15|25s29
+205p19 File{52P9} 15|25r33
+205e37 Item{character} 15|25r47
+208U14*Put 15|36s29
+208e19 Item{character} 15|36r33
+X 15 flesch.adb
+10U11*flesch 10b11 40l5 40t11
+12p9 In_File{13|52P9} 21m34 21r34 24r43 25r39 32m75 32r75
+13e9 value{character} 25m53 27r36
+14a9 string_array(character) 27m17 36r39
+15i9 pos{integer} 23m9 26m17 26r22 27r30 35r21
+16a9 cl{string} 21r79
+35i13 i{integer} 36r52
+

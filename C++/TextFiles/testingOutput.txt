@@ -1,0 +1,52 @@
+TextFiles/ASV.txt
+The Flesch Readability Index for this document is: 77
+The Flesch-Kincaid Grade Level Index for this document is: 6.6
+
+TextFiles/BBE.txt
+The Flesch Readability Index for this document is: 84
+The Flesch-Kincaid Grade Level Index for this document is: 5.9
+
+TextFiles/DARBY.txt
+The Flesch Readability Index for this document is: 78
+The Flesch-Kincaid Grade Level Index for this document is: 6.3
+
+TextFiles/DRB.txt
+The Flesch Readability Index for this document is: 82
+The Flesch-Kincaid Grade Level Index for this document is: 5.4
+
+TextFiles/KJ21.txt
+The Flesch Readability Index for this document is: 76
+The Flesch-Kincaid Grade Level Index for this document is: 7.7
+
+TextFiles/KJV.txt
+The Flesch Readability Index for this document is: 80
+The Flesch-Kincaid Grade Level Index for this document is: 5.8
+
+TextFiles/NAB.txt
+The Flesch Readability Index for this document is: 51
+The Flesch-Kincaid Grade Level Index for this document is: 16.2
+
+TextFiles/NASB.txt
+The Flesch Readability Index for this document is: 75
+The Flesch-Kincaid Grade Level Index for this document is: 8.0
+
+TextFiles/NIV.txt
+The Flesch Readability Index for this document is: 77
+The Flesch-Kincaid Grade Level Index for this document is: 7.0
+
+TextFiles/NKJV.txt
+The Flesch Readability Index for this document is: 77
+The Flesch-Kincaid Grade Level Index for this document is: 7.3
+
+TextFiles/NLT.txt
+The Flesch Readability Index for this document is: 77
+The Flesch-Kincaid Grade Level Index for this document is: 6.4
+
+TextFiles/WEB.txt
+The Flesch Readability Index for this document is: 81
+The Flesch-Kincaid Grade Level Index for this document is: 5.8
+
+TextFiles/YLT.txt
+The Flesch Readability Index for this document is: 66
+The Flesch-Kincaid Grade Level Index for this document is: 11.1
+
